@@ -1,0 +1,16 @@
+CREATE TABLE Person (
+    id serial NOT NULL PRIMARY KEY,
+    LastName varchar(45) DEFAULT NULL,
+    FirstName varchar(45) DEFAULT NULL,
+    MiddleName varchar(45) DEFAULT NULL,
+    Suffix varchar(45) DEFAULT NULL,
+    Title varchar(45) DEFAULT NULL,
+    StreetNo int DEFAULT NULL,
+    Barangay varchar(45) DEFAULT NULL,
+    City varchar(45) DEFAULT NULL,
+    Zipcode int DEFAULT NULL,
+    Bday Date DEFAULT NULL,
+    Gwa numeric DEFAULT NULL,
+    dateHired Date DEFAULT NULL,
+    Employed boolean DEFAULT NULL,
+);

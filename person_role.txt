@@ -1,0 +1,7 @@
+CREATE TABLE person_role (
+	person_id int NOT NULL PRIMARY KEY,
+	role_id int NOT NULL PRIMARY KEY
+
+	FOREIGN KEY(role_id) REFERENCES roles(id)
+	FOREIGN KEY(person_id) REFERENCES person(id)
+);

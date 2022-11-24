@@ -1,0 +1,11 @@
+CREATE TABLE roles (
+    id serial NOT NULL PRIMARY KEY,
+    roles varchar(45) DEFAULT NULL,
+    person_id int DEFAULT NULL,
+  
+    UNIQUE (roles),
+
+    FOREIGN KEY(person_id) REFERENCES person(id)
+);
+
+CREATE UNIQUE INDEX roles_unique_idx on roles (LOWER(roles));  

@@ -1,0 +1,8 @@
+CREATE TABLE Contact (
+    id serial NOT NULL PRIMARY KEY,
+    contact_type varchar(45) DEFAULT NULL,
+    contact_value varchar(45) DEFAULT NULL,
+    person_id int DEFAULT NULL,
+  
+    FOREIGN KEY(person_id) REFERENCES person(id)
+);
